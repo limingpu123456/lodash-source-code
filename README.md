@@ -45,3 +45,10 @@ isObjectLike返回值是否是类对象
 ## concat
 
 创建一个新数组，将array与任何数组 或 值连接在一起
+
+## findIndex
+
+该方法类似_.find，区别是该方法返回第一个通过 predicate 判断为真值的元素的索引值（index），而不是元素本身。
+array (Array): 要搜索的数组。
+[predicate=_.identity] (Array|Function|Object|string): 这个函数会在每一次迭代调用。
+[fromIndex=0] (number): The index to search from.
