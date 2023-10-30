@@ -31,7 +31,7 @@ function matchesPredicate(item,predicate){
             return false;
         }
         for(const key in predicate){
-            if(predicate.hasOwnProperty(key) && item[key] !== predicate[key]){
+            if(!predicate.hasOwnProperty(key) || item[key] !== predicate[key]){
                 return false
             }
         }
