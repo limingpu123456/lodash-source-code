@@ -27,6 +27,9 @@ function findIndex(array,predicate,fromIndex = 0){
 
 function matchesPredicate(item,predicate){
     if(typeof predicate === 'object'){
+        if(Object.keys(item).length !== Object.keys(predicate).length){
+            return false;
+        }
         for(const key in predicate){
             if(predicate.hasOwnProperty(key) && item[key] !== predicate[key]){
                 return false
