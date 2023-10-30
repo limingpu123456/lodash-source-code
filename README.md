@@ -52,3 +52,7 @@ isObjectLike返回值是否是类对象
 array (Array): 要搜索的数组。
 [predicate=_.identity] (Array|Function|Object|string): 这个函数会在每一次迭代调用。
 [fromIndex=0] (number): The index to search from.
+
+## findLastIndex
+
+这个方式类似_.findIndex， 区别是它是从右到左的迭代集合array中的元素。
