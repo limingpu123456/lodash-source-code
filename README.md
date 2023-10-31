@@ -1,5 +1,5 @@
 # Lodash源码
-
+中文文档：https://www.lodashjs.com/docs/lodash.chunk
 ## chunk
 
 chunk函数可以将一个数组，切割成指定大小的块，返回由这些块组成的新数组
