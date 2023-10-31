@@ -18,6 +18,10 @@ false,null,0,"",undefined,NaN都为假值
 
 difference方法，返回一个新数组，接受两个参数，创建一个array值的数组，每个值不包含在其给定的数组中
 
+## differenceBy
+这个方法类似_.difference ，除了它接受一个 iteratee （注：迭代器）， 调用array 和 values 中的每个元素以产生比较的标准。 结果值是从第一数组中选择。
+注意: 这个方法会返回一个新数组。
+
 ## drop
 
 drop 的作用是在移除数组中前 n 个数的元素，并将剩余的元素返回。如果指定的个数比数组的长度大，返回的是空数组。
