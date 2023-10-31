@@ -10,6 +10,14 @@ chunk函数在前端可以缓解一些性能问题。例如大量操作DOM的时
 compact函数用于去除数组中的假值，并返回由不为假值的元素组成的新数组
 false,null,0,"",undefined,NaN都为假值
 
+## concat
+
+创建一个新数组，将array与任何数组 或 值连接在一起
+
+## difference
+
+difference方法，返回一个新数组，接受两个参数，创建一个array值的数组，每个值不包含在其给定的数组中
+
 ## drop
 
 drop 的作用是在移除数组中前 n 个数的元素，并将剩余的元素返回。如果指定的个数比数组的长度大，返回的是空数组。
@@ -18,13 +26,17 @@ drop 的作用是在移除数组中前 n 个数的元素，并将剩余的元素
 
 dropRight 的作用是在移除数组中后 n 个数的元素，并将剩余的元素返回。如果指定的个数比数组的长度大，返回的是空数组。
 
-## isLength
+## fill
 
-isLength用于判断所传入的值是否为数组或者类数组可用的length属性
+fill使用 value 值来填充（替换） array，从start位置开始, 到end位置结束（但不包含end位置）。
 
-## isObjectList
+## findIndex
 
-isObjectLike返回值是否是类对象
+该方法类似_.find，区别是该方法返回第一个通过 predicate 判断为真值的元素的索引值（index），而不是元素本身。
+
+## findLastIndex
+
+这个方式类似_.findIndex， 区别是它是从右到左的迭代集合array中的元素。
 
 ## flattenDepth
 
@@ -34,25 +46,20 @@ isObjectLike返回值是否是类对象
 
 获取数组的第一项
 
-## last
-
-获取数组的最后一项
-
 ## indexOf
 
 用于查找指定元素的下标，indexOf 接收三个参数，第一个 array 为数组，第二个参数 value 为需要查找的值，第三个 fromIndex 参数和数组的 indexOf 方法一样，用来指定开始查找的位置。
 
-## concat
+## isLength
 
-创建一个新数组，将array与任何数组 或 值连接在一起
+isLength用于判断所传入的值是否为数组或者类数组可用的length属性
 
-## findIndex
+## isObjectList
 
-该方法类似_.find，区别是该方法返回第一个通过 predicate 判断为真值的元素的索引值（index），而不是元素本身。
-array (Array): 要搜索的数组。
-[predicate=_.identity] (Array|Function|Object|string): 这个函数会在每一次迭代调用。
-[fromIndex=0] (number): The index to search from.
+isObjectLike返回值是否是类对象
 
-## findLastIndex
+## last
 
-这个方式类似_.findIndex， 区别是它是从右到左的迭代集合array中的元素。
+获取数组的最后一项
+
+
