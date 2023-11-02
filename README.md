@@ -22,8 +22,13 @@ false,null,0,"",undefined,NaN都为假值
 difference方法，返回一个新数组，接受两个参数，创建一个array值的数组，每个值不包含在其给定的数组中
 
 ## differenceBy
+
 这个方法类似_.difference ，除了它接受一个 iteratee （注：迭代器）， 调用array 和 values 中的每个元素以产生比较的标准。 结果值是从第一数组中选择。
 注意: 这个方法会返回一个新数组。
+
+## differenceWith
+
+这个方法类似difference ，除了它接受一个 comparator （注：比较器），它调用比较array，values中的元素。 结果值是从第一数组中选择。comparator 调用参数有两个：(arrVal, othVal)。
 
 ## drop
 
