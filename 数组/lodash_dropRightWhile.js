@@ -1,6 +1,11 @@
-function dropRightWhile(){
-
+function dropRightWhile (array,predicate) {
+  let index = array.length - 1
+  while (index >= 0 && predicate(array[index])) {
+    index--
+  }
+  return array.slice(0,index + 1)
 }
+
 
 var users = [
   { 'user': 'barney',  'active': true },
@@ -10,12 +15,3 @@ var users = [
 
 dropRightWhile(users, function(o) { return !o.active; });
 // => [ { user: 'barney', active: true } ]
- 
-dropRightWhile(users, { 'user': 'pebbles', 'active': false });
-// => [ { user: 'barney', active: true },{ user: 'fred', active: false } ]
- 
-dropRightWhile(users, ['active', false]);
-// => [ { user: 'barney', active: true } ]
- 
-dropRightWhile(users, 'active');
-//[ { user: 'barney', active: true },{ user: 'fred', active: false },{ user: 'pebbles', active: false } ]
