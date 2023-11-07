@@ -80,6 +80,3 @@ isObjectLike返回值是否是类对象
 ## last
 
 获取数组的最后一项
-
-
->>>>>>> droprightwhile fix
