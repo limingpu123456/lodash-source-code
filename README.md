@@ -57,13 +57,17 @@ fill使用 value 值来填充（替换） array，从start位置开始, 到end�
 
 这个方式类似_.findIndex， 区别是它是从右到左的迭代集合array中的元素。
 
-## flattenDepth
-
-用来展平数组，可以指定展平的深度。
-
 ## head
 
 获取数组的第一项
+
+## flatten（减少一层嵌套）
+
+减少一层array嵌套深度
+
+## flattenDepth
+
+用来展平数组，可以指定展平的深度。
 
 ## indexOf
 
