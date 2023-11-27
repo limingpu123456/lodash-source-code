@@ -5,7 +5,7 @@
 
 中文文档解析版本：https://lodash.shujuwajue.com/array/flattendeep
 
-# 数组
+# Array(数组)
 
 ## chunk
 
@@ -85,6 +85,14 @@ fill使用 value 值来填充（替换） array，从start位置开始, 到end�
 
 用于查找指定元素的下标，indexOf 接收三个参数，第一个 array 为数组，第二个参数 value 为需要查找的值，第三个 fromIndex 参数和数组的 indexOf 方法一样，用来指定开始查找的位置。
 
+## last
+
+获取数组的最后一项
+
+
+
+# Lang(类型转换与类型判断操作)
+
 ## isLength
 
 isLength用于判断所传入的值是否为数组或者类数组可用的length属性
@@ -92,7 +100,3 @@ isLength用于判断所传入的值是否为数组或者类数组可用的length
 ## isObjectList
 
 isObjectLike返回值是否是类对象
-
-## last
-
-获取数组的最后一项
