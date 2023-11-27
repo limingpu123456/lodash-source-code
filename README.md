@@ -77,6 +77,10 @@ fill使用 value 值来填充（替换） array，从start位置开始, 到end�
 
 用来展平数组，可以指定展平的深度。
 
+## fromPairs
+
+返回一个由键值对pairs构成的对象
+
 ## indexOf
 
 用于查找指定元素的下标，indexOf 接收三个参数，第一个 array 为数组，第二个参数 value 为需要查找的值，第三个 fromIndex 参数和数组的 indexOf 方法一样，用来指定开始查找的位置。
