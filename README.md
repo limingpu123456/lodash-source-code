@@ -89,6 +89,9 @@ fill使用 value 值来填充（替换） array，从start位置开始, 到end�
 
 获取数组的最后一项
 
+## initial
+
+去除数组的最后一个元素
 
 
 # Lang(类型转换与类型判断操作)
